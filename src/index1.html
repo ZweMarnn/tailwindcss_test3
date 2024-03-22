@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header relative">
+            <img src="../public/images/2.jpg" alt="" class="w-full h-96">
+            <div class="w-full h-96 bg-gray-950 absolute top-0 left-0 bg-opacity-50"></div>
+        </div>
+        <div class="w-full h-60 bg bg-gradient-to-r from-black from-10% via-indigo-500 to bg-cyan-500"></div>
+    </header>
+    <div class="w-full mt-5 mb-5 bg-cyan-50 flex flex-row">
+        <div class="columns-6 w-full rounded-xl flex flex-col" data-accordion="collapse">
+            <div class="accordion-item">
+                <h2 class="accordion-heading rounded-xl w-full flex flex-row justify-between bg-blue-400">
+                    <button class="w-full flex flex-row justify-between text-yellow-900 hover:text-black p-3"
+                        data-accordion-target="#accordion1" aria-expanded="true">
+                        <span>Vision</span>
+                        <span>+</span>
+                    </button>
+                </h2>
+                <div class="accordion body" id="accordion1">
+                    <ul class="pl-8">
+                        <li>To Blah Blah</li>
+                        <li>To Blah Blah</li>
+                        <li>To Blah Blah</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-heading rounded-xl w-full flex flex-row justify-between bg-blue-400">
+                    <button class="w-full flex flex-row justify-between text-yellow-900 hover:text-black p-3"
+                        data-accordion-target="#accordion2" aria-expanded="true">
+                        <span>Mission</span>
+                        <span>+</span>
+                    </button>
+                </h2>
+                <div class="accordion body" id="accordion2">
+                    <ul class="pl-8">
+                        <li>To Blah Blah</li>
+                        <li>To Blah Blah</li>
+                        <li>To Blah Blah</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="columns-6 w-full flex flex-col border border-black text-center">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-gray-400 odd:text-black even:bg-black even:text-white">
+                        <td>1</td>
+                        <td>Zwe</td>
+                        <td>ngazwe.001@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr class="odd:bg-gray-400 odd:text-black even:bg-black even:text-white">
+                        <td>2</td>
+                        <td>Marnn</td>
+                        <td>zm.2001@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr class="odd:bg-gray-400 odd:text-black even:bg-black even:text-white">
+                        <td>3</td>
+                        <td>Christ</td>
+                        <td>christ@gmail.com</td>
+                        <td>Florida</td>
+                    </tr>
+                    <tr class="odd:bg-gray-400 odd:text-black even:bg-black even:text-white">
+                        <td>4</td>
+                        <td>Toshi Sadio</td>
+                        <td>toshi555@gmail.com</td>
+                        <td>Nagoya</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <ul class="flex flex-row gap-4 ml-5" data-tabs-toggle="#tabPanes">
+            <li class="bg-slate-300  p-3 rounded-2xl border border-black">
+                <button data-tabs-target="#research-pane" role="tab" aria-selected="true">Research</button>
+            </li>
+            <li class="bg-slate-300 p-3 rounded-2xl border border-black">
+                <button data-tabs-target="#ojt-pane" role="tab" aria-selected="false">On Job Training</button>
+            </li>
+            <li class="bg-slate-300 p-3 rounded-2xl border border-black">
+                <button data-tabs-target="#news-pane" role="tab" aria-selected="false">News</button>
+            </li>
+        </ul>
+        <div class="m-5 p-5 border-2 border-blue-800" id="tabPanes">
+            <div class="pane1" id="research-pane">
+                <h2>Research Pane</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis corporis
+                    voluptate accusantium. Eos neque quo aperiam minima, odit exercitationem doloribus est velit earum
+                    et quisquam, ab assumenda voluptate ratione.</p>
+            </div>
+            <div class="pane2" id="ojt-pane">
+                <h2>OJT Pane</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis corporis
+                    voluptate accusantium. Eos neque quo aperiam minima, odit exercitationem doloribus est velit earum
+                    et quisquam, ab assumenda voluptate ratione.</p>
+            </div>
+            <div class="pane3" id="news-pane">
+                <h2>News Pane</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis corporis
+                    voluptate accusantium. Eos neque quo aperiam minima, odit exercitationem doloribus est velit earum
+                    et quisquam, ab assumenda voluptate ratione.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row">
+        <div class="columns-3 flex flex-col">
+            <ul class="flex flex-col gap-3" data-tabs-toggle="#tabPanes">
+                <li class="bg-yellow-50 p-3 rounded-2xl border border-black">
+                    <button data-tabs-target="#paneBA" role="tab" aria-selected="true">BA</button>
+                </li>
+                <li class="bg-yellow-50 p-3 rounded-2xl border border-black">
+                    <button data-tabs-target="#paneMA" role="tab" aria-selected="false">MA</button>
+                </li>
+                <li class="bg-yellow-50 p-3 rounded-2xl border border-black">
+                    <button data-tabs-target="#panePHD" role="tab" aria-selected="false">PHD</button>
+                </li>
+            </ul>
+        </div>
+        <div class="columns-9 border-2 border-red-700 ml-2 p-5">
+            <div class="tabPanes" id="tabPanes">
+                <div class="pane1" id="paneBA">
+                    <h2>Bachelor Pane</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis corporis
+                        voluptate accusantium. Eos neque quo aperiam minima, odit exercitationem doloribus est velit earum
+                        et quisquam, ab assumenda voluptate ratione.</p>
+                </div>
+                <div class="pane2" id="paneMA">
+                    <h2>Master Pane</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis corporis
+                        voluptate accusantium. Eos neque quo aperiam minima, odit exercitationem doloribus est velit earum
+                        et quisquam, ab assumenda voluptate ratione.</p>
+                </div>
+                <div class="pane3" id="panePHD">
+                    <h2>PHD Pane</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis corporis
+                        voluptate accusantium. Eos neque quo aperiam minima, odit exercitationem doloribus est velit earum
+                        et quisquam, ab assumenda voluptate ratione.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
